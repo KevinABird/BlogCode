@@ -116,10 +116,6 @@ def fig1():
     ax2.spines["right"].set_visible(False)
 
     ratio = S_breed / S_cull
-    fig.text(0.5, -0.02,
-            f"The breeding program is {ratio:.0f}× stronger per generation. "
-            "Same trait, same direction — the entire gap is in the selection mode.",
-            ha="center", fontsize=12, color=C_PURPLE, fontweight="bold")
     fig.suptitle("Culling vs. selective breeding: the selection intensity gap",
                 fontsize=14, fontweight="bold", y=1.02)
     fig.tight_layout()
